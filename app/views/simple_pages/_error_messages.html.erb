@@ -1,0 +1,10 @@
+<% if @post.errors.any? %>
+  <div class = "errors">
+    <p><%= pluralize(@post.errors.count, "error") %> prevented this post from savign.</p>
+    <ul>
+      <% @post.errors.full_messages.each do |msg| %>
+      <li><%= msg %></li>
+      <% end %>
+    </ul>
+  </div>
+<% end %>

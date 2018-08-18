@@ -1,0 +1,8 @@
+<h1>AnotherCodeBlog</h1>
+<p>My Journey to becoming a Web Developer</p>
+
+<div class = "postlist">
+  <% @posts.each do |post| %>
+    <h2><%= link_to "post.title", post %></h2>
+    <p><%= post.content %></p>
+</div>
