@@ -1,7 +1,13 @@
-<h1>AnotherCodeBlog</h1>
-<p>My Journey to becoming a Web Developer</p>
+<div class="title">
+  <h1>anotherCodeBlog</h1>
+  <p>My Journey to becoming a Web Developer</p>
+</div>
 
 <div class = "postlist">
+  <div class = "container">
+    <div class = "row" class = ".col-s-12 .col-m-4">
+    </div> <!--row-->
+  </div> <!--container-->
   <% @posts.each do |post| %>
     <h2><%= link_to "post.title", post %></h2>
     <p><%= post.content %></p>
